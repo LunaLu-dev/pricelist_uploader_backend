@@ -9,7 +9,7 @@ app.use(cors());
 // Configure multer for file upload
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'uploads/') // Files will be stored in 'uploads' directory
+        cb(null, 'uploads/')
     },
     filename: function (req, file, cb) {
         cb(null, file.originalname)
