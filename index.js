@@ -30,7 +30,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
     });
 });
 
-const PORT = 3000;
+const PORT = 7001;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
